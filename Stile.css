@@ -159,6 +159,16 @@ footer {
 }
 .fixed-top {
     background: #6c757d59;
+    transition: ease-in-out all 1s;
+}
+
+.project-img:hover {
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+}
+
+img.img-lang {
+    width: 30px;
 }
 
 @keyframes cambio {

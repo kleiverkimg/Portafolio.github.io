@@ -68,8 +68,15 @@ animate();
 
 window.addEventListener("scroll", function(){
   let serv = document.getElementById("animar");
+  let barran = document.getElementById("barranav");
   let position = serv.getBoundingClientRect().top;
   console.log(position);
+  
+  if (position < 1180){    
+    barran.style.background = "#0e0f10ad"
+  }else{
+    barran.style.background = "#6c757d59"
+  }
   if (position < 800) {    
     serv.style.animation= "aparecer 1.5s ease-out";
     serv.style.transform= "translate(0%)";
